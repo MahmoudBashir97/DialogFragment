@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="10dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Custom Dialog Heading "
+            android:textColor="#000"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt1"
+            android:layout_marginTop="20dp"
+            android:hint="enter some text..."
+            android:inputType="textMultiLine"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input"
+            android:layout_marginTop="80dp"
+            android:background="#FFFDFDFD"
+            android:text="Cancel"
+            tools:ignore="HardcodedText"
+            android:textColor="#00f"
+            android:textSize="18sp"
+            />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input"
+            android:layout_marginTop="80dp"
+            android:background="#FFFDFDFD"
+            android:text="OK"
+            android:layout_toRightOf="@+id/btn1"
+            tools:ignore="HardcodedText,RtlHardcoded"
+            android:textColor="#00f"
+            android:textSize="18sp"
+            android:layout_marginLeft="155dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
